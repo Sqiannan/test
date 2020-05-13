@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+	</head>
+	
+	<style type="text/css">
+		
+		
+		.nav-pills > li.active > a,
+		.nav-pills > li.active > a:hover,
+		.nav-pills > li.active > a:focus {
+		  color: #fff;
+		  background-color: #337ab7;
+		}
+		
+		
+	</style>
+
+	<body>
+		
+		
+		<div id="page1" style="background-color:rgb(48,71,96); height: 1000px;">
+				<div id="headerdiv">
+					<div id="divimg" style="width: 10%;" class="floatLeft">
+						<img src="img/logo.png" />
+					</div>
+					
+					<div id="selected" class="floatLeft" style="float: left;width: 450px;">
+						<ul id="butUL" class="nav nav-pills">
+						  <li id="li1" class="active"><a href="#" onclick="goToByScroll('page1',this)">Home</a></li>
+						  <li id="li2"><a href="#" onclick="goToByScroll('page2',this)">About</a></li>
+						  <li id="li3"><a href="#" onclick="goToByScroll('page3',this)">Services</a></li>
+						  <li id="li4"><a href="#" onclick="goToByScroll('page4',this)">Clients</a></li>
+						  <li id="li5"><a href="#" onclick="goToByScroll('page5',this)">Contacts</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div id="textDiv" >
+					<p id="p1" style="display: none;text-shadow: 2px 2px 2px black;-1px -1px 1px white;">Let Us Show You the Way to Success</p>
+					<p id="p2" style="display: none;background-clip: border-box;">Interminable Energy for Your Project</p>
+					<p id="p3" style="display: none;">We know how to solve your problems!</p>
+					<p id="p4" style="display: none;">Make your business a booming one!</p>
+				</div>
+				
+				<div style="margin-left: 45%;margin-top: 180px;float: left;">
+					<div class="divselected" onclick="setText(1)"></div>
+					<div class="divselected" onclick="setText(2)"></div>
+					<div class="divselected" onclick="setText(3)"></div>
+					<div class="divselected" onclick="setText(4)"></div>
+				</div>
+				
+				<div style="float: left;margin-top: 100px;margin-left: 41%;">
+					<img src="img/socials.png" />
+				</div>
+						
+		</div>
+		<div id="page2" style="background-color:#F17C72; height: 1000px;">
+			<div id="san1"></div>
+
+			<div style="text-align:center;font-size: 48px;font-weight: bold;color: white;padding-top: 50px;">
+				Only Professional <span style="background-color: rgb(64,224,208);">Services</span> for Our <span style="background-color: rgb(122,55,139);">Clients</span>
+			</div>
+			
+			<div style="margin-top: 50px;">
+				<p class="p"><a href="#">Click here</a> for more info about this free website template created by TemplateMonster.com</p>
+				<p  class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies</p>
+			</div>
+		
+			<!--展示头像图片-->
+			<div class="headimage" style="width: 1000px; height: 350px;margin: 0 auto;margin-top: 150px;">
+				<div class="headerimage" >
+					<img src="img/box_img1.jpg" class="imgs"/>
+					<span>
+						<center><p class="firstp">Laura Stegner</p></center>
+						<center style="margin-top: -13px;"><p style="color: white">senior manager</p></center>
+					</span>
+					<hr/>
+					<img src="img/soc1.png" class="menuBar"/>
+				</div>
+				<div class="headerimage">
+					<img src="img/box_img2.jpg" class="imgs"/>
+					<span>
+						<center><p class="firstp">Laura Stegner</p></center>
+						<center style="margin-top: -13px;"><p style="color: white">senior manager</p></center>
+					</span>
+					<hr/>
+					<img src="img/soc1.png" class="menuBar"/>
+				</div>
+				<div class="headerimage">
+					<img src="img/box_img3.jpg" class="imgs"/>
+					<span>
+						<center><p class="firstp">Laura Stegner</p></center>
+						<center style="margin-top: -13px;"><p style="color: white">senior manager</p></center>
+					</span>
+					<hr/>
+					<img src="img/soc1.png" class="menuBar"/>
+				</div>
+				<div class="headerimage">
+					<img src="img/box_img4.jpg" class="imgs"/>
+					<span>
+						<center><p class="firstp">Laura Stegner</p></center>
+						<center style="margin-top: -13px;"><p style="color: white">senior manager</p></center>
+					</span>
+					<hr/>
+					<img src="img/soc1.png" class="menuBar"/>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		<div id="page3" style="background-color:#32AC97; height: 1000px;">
+			<div id="san2"></div>
+			<!------------------------------------------------------------------>
+			<div style="margin-left: 40%;font-size: 48px;font-weight: bold;color: white;padding-top: 50px;">
+				Our Services
+			</div>
+			
+			<div style="margin-top: 50px;">
+				<p style="text-align: center;" class="p">Vivamus at magna non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a, commodo luctus libero.</p>
+				<p style="text-align: center;" class="p">Praesent faucibus malesuada faucibus. Donec laoreet metus id laoreet malesuada. Lorem ipsum dolor sit amet,</p>
+				<p style="text-align: center;" class="p">consectetur adipiscing elit. Nullam consectetur orci sed nulla facilisis consequat. Curabitur vel lorem sit amet</p>
+				<p style="text-align: center;" class="p">nulla ullamcorper fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+		
+			<!--展示头像图片-->
+			<div style="width: 1000px; height: 350px;margin: 0 auto;margin-top: 150px;">
+				<div class="headerimage2" >
+					<img src="img/box1_img1.png" class="imgs1" />
+					<span style="top:-100px;">
+						<center><p class="firstp">Strategy</p></center>
+						<center ><p style="color: white">Vivamus atmagna non nunctristique thoncus Aliquam nibhante, egestas id dictum acommodo luclus libero</p></center>
+					</span>
+					
+				</div>
+				<div class="headerimage2" >
+					<img src="img/box1_img2.png" class="imgs1"/>
+					<span>
+						<center><p class="firstp">Research</p></center>
+						<center ><p style="color: white">aliquet sit amet erat Nullameget dignissim nisi, aliquamfeugiat nibhh sagittis utlte auctor noп pellentesque vel,</p></center>
+					</span>
+					
+				</div>
+				<div class="headerimage2" >
+					<img src="img/box1_img3.png" class="imgs1"/>
+					<span>
+						<center><p class="firstp">Development</p></center>
+						<center ><p style="color: white">Praesent faucibusamus aterasmagna non nunc tristiquerhoncus . Aliquam nib ante, tasid dictum aluctus libero.</p></center>
+					</span>
+					
+				</div>
+				<div class="headerimage2">
+					<img src="img/box1_img4.png" class="imgs1"/>
+					<span>
+						<center><p class="firstp">Consulting</p></center>
+						<center ><p style="color: white">Etiam dui eros na non nunctristique rhoncus Aliquam nibhante, egestas id dictumacommodo luclus libero.</p></center>
+					</span>
+					
+				</div>
+			</div>
+			
+			
+			
+			
+			
+		</div>
+		
+		<div id="page4" style="background-color:#7F4C76; height: 1000px;">
+			<div id="san3"></div>
+			<div style="width: 1000px; height: 350px;padding-top: 120px;margin: 0 auto;">
+				<div class="headerimage4" ">
+					<img src="img/logo1.jpg" class="img4"/>
+					<span>
+						<center><p class="firstp">Company Name</p></center>
+						<center ><p class="font">Aliquam nibh ante, egestas id dictumwrecommodo luctus liberoaesent.</p></center>
+					</span>
+					<a href="#"><p>Go to Site<img src="img/link_marker.png" /></p></a>
+				</div>
+				<div class="headerimage4">
+					<img src="img/logo2.jpg" class="img4"/>
+					<span>
+						<center><p class="firstp">Company Name</p></center>
+						<center ><p class="font">Fusce adipiscing quam id risus gitis,non consequat lacus interdumoin.</p></center>
+					</span>
+					<a href="#"><p>Go to Site<img src="img/link_marker.png" /></p></a>
+				</div>
+				<div class="headerimage4">
+					<img src="img/logo3.jpg" class="img4"/>
+					<span>
+						<center><p class="firstp">Company Name</p></center>
+						<center ><p class="font">Quisque viverra nulla nunc, euultrices wertlibero ultricies egetasellusum.</p></center>
+					</span>
+					<a href="#"><p>Go to Site<img src="img/link_marker.png" /></p></a>
+				</div>
+				<div class="headerimage4">
+					<img src="img/logo4.jpg" class="img4"/>
+					<span>
+						<center><p class="firstp">Company Name</p></center>
+						<center ><p class="font">Courrewerwe abitur vel lorem sit ametulla ullamcorper fermentumn vitae.</p></center>
+					</span>
+					<a href="#"><p>Go to Site<img src="img/link_marker.png" /></p></a>
+				</div>
+			</div>
+			<div style="width: 1000px; height: 350px;margin: 0 auto;padding-top: 160px;">
+				<div class="headerimage4" >
+					<img src="img/logo5.jpg" class="img4"/>
+					<span>
+						<center><p class="firstp">Company Name</p></center>
+						<center ><p class="font">Oiliquam nibh ante, egestas id dictumwrecommodo luctus liberoaesente.</p></center>
+					</span>
+					<span>
+						<a href="#"><p>Go to Site<img src="img/link_marker.png" /></p></a>
+					</span>
+				</div>
+				<div class="headerimage4">
+					<img src="img/logo6.jpg" class="img4"/>
+					<span>
+						<center><p class="firstp">Company Name</p></center>
+						<center ><p class="font">Gusce adipiscing quam id risus gittis,non consequat lacus interdumoiju.</p></center>
+					</span>
+					  <a href="#"><p>Go to Site<img src="img/link_marker.png" /></p></a>
+				</div>
+				<div class="headerimage4">
+					<img src="img/logo7.jpg" class="img4"/>
+					<span>
+						<center><p class="firstp">Company Name</p></center>
+						<center ><p class="font">Niuisque viverra nulla nunc, euultrices wertibero ultricies egetasellusol</p></center>
+					</span>
+					<a href="#"><p>Go to Site<img src="img/link_marker.png" /></p></a>
+				</div>
+				<div class="headerimage4">
+					<img src="img/logo8.jpg" class="img4"/>
+					<span>
+						<center><p class="firstp">Company Name</p></center>
+						<center ><p class="font" style="font-size:12px;">Aliquam nibh ante, egestas id dictumwrecommodo luctus liberoaesent.</p></center>
+					</span>
+					<a href="#"><p>Go to Site<img src="img/link_marker.png" /></p></a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="page5" style="background-color:#3697CC; height: 1000px;">
+			<div id="san4"></div>
+			<div>
+				<center><p style="font-size: 48px;color: white;padding-top:120px;">Get In Touch</p></center>	
+				<center><p class="firstp" style="padding-top:30px;width: 1000px;">Gyrto ivamus at magna non nunc tristique rhoncusu. Lliquam nibh ante, egestas id dictum a, commodo luctusmibero. Praesent faucibus malesuada faucibu. Monec laoreet metus id laoreet malesuadw.</p></center>
+			    <div style="margin-top:120px;width:950px;height: 350px;margin:0 auto;margin-top: 120px;">
+                	<div style="float:left;width: 195px;">
+                		<span>
+						<p class="firstp">Adress</p>
+						<div class="font" style="margin-top:45px">The Company Name Inc.</div>
+						<div class="font">8901 Marmora Road.</div>
+						<div class="font">Glasgow, D04 89GR.</div>
+						<div class="font" style="margin-top:70px">Freephone:<span style="float:right">+1 800 559 6580</span></div>
+						<div class="font">Telephone:<span style="float:right">+1 800 603 6035</span></div>
+						<div class="font">Fax:<span style="float:right">+1 800 889 9898</span></div>
+						<div class="font">E-mail:<span style="color: rgb(15,72,102);">mail@demolimk.org</span></div>
+						<div class="font">skype:<span style="color: rgb(15,72,102);">@skypeName</span></div>
+					</span>
+                	</div>
+                	
+					<div style="float:right;width:460px;height: auto;"> 
+                		<span>
+						<p class="firstp">Ask a Question</p>
+						<input type="text" class="input" value="Name" onfocus="if (value =='Name'){value =''}" onblur="if (value ==''){value='Name'}"  />
+						<input type="text" class="input" value="E-mail" onfocus="if (value =='E-mail'){value =''}" onblur="if (value ==''){value='E-mail'}" style="width: 185px;height: 30px;margin-top:45px;margin-left: 6px;background-color: rgb(194,232,343);border: 1px solid #286090;"/>
+						<textarea cols="50" rows="5"   onfocus="if (value =='Message'){value =''}" onblur="if (value ==''){value='Message'}"  >Message</textarea>
+						
+						
+
+						<center><input type="button" value="Send" style="background-color:rgb(244,123,144) ;color:white;margin-top:20px;width:130px;height: 30px;border: 1px solid #286090;"/></center>
+						
+						
+					</span>
+                	</div>
+                </div>
+			</div>
+				
+						
+					
+		</div>
+		
+	</body>
+	
+	<script type="text/javascript">
+		
+		var page2 = document.getElementById("page2");
+		var page3 = document.getElementById("page3");
+		var page4 = document.getElementById("page4");
+		var page5 = document.getElementById("page5");
+		/*得到滚动条滚动距离*/
+		
+		document.onscroll = function(){
+			sanShow();
+			setColor();
+		}
+		
+		
+		
+		
+		
+		
+	</script>
+</html>
